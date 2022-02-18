@@ -11,16 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    
+    @IBOutlet var UIFirstLabel: UILabel!
     @IBOutlet var TextView: UITextView!
-    @IBOutlet var CALCULATE: UIButton!
     @IBOutlet var `return`: UIButton!
     @IBOutlet var AboutACM: UIButton!
-    @IBOutlet var no_text: UILabel!
-    @IBOutlet var UIFirstLabel: UILabel!
-    var numberOne = 1
-    var numberTwo = 999
-    var numberThree = 1 + 999
+
+
     
     let quotation = """
 Since its inception in 1976, the University of Hawaiʻi – West Oʻahu has been committed to delivering accessible, affordable higher education to residents on the Leeward Coast through dynamic, flexible, and responsive methods.
@@ -45,25 +41,11 @@ UH West Oʻahu offers unique programs such as creative media, cybersecurity, hea
         TextView.text = "Students in the Video Game Design and Development concentration will experience the entire game development cycle – from creating concept art and UI & UX for games, to coding for artificial intelligence and virtual reality gaming experiences. Students will develop specialized skills that prepare them for cutting-edge careers in a vibrant, multifaceted, and expansive industry. Students will acquire the breadth of knowledge needed to build a career not just in game programming but in other industries that use gaming and simulation, from education to healthcare and public policy."
     }
     @IBAction func `return`(_ sender: Any) {
-        self.TextView.text = quotation
         self.UIFirstLabel.text = "University of Hawai'i West O'ahu"
+        self.TextView.text = quotation
     }
-    @IBAction func Calculon(_ sender: Any) {
-        
-        numberThree = numberTwo + numberOne
-        
-        self.no_text.text = String(numberThree)
-        
-        if numberOne < numberTwo
-        {
-            view.backgroundColor = UIColor.purple
-        }
-        else
-        {
-            view.backgroundColor = UIColor.red
-        }
+   
     }
 
 
-}
 

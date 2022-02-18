@@ -7,11 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="fdL-AV-lgU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Czq-7k-1JM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="5lC-wk-1wp" customClass="ViewController" customModule="AppBuildOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5lC-wk-1wp" customClass="SecondViewController" customModule="AppBuildOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DOx-Hn-mtT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,9 +51,11 @@
                     <navigationItem key="navigationItem" id="xZd-VY-cPu"/>
                     <connections>
                         <outlet property="CALCULATE" destination="piQ-8M-1nT" id="jwO-D9-6QP"/>
+                        <outlet property="UI_SecondLabel" destination="laz-eG-FBR" id="mwf-6i-v0s"/>
                         <outlet property="no_text" destination="gpQ-xA-BBj" id="pQJ-uB-8bx"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Czq-7k-1JM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1030" y="175"/>
         </scene>
